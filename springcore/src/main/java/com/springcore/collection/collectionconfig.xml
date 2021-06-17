@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean name="emp1" class="com.springcore.collection.Emp">
+ 	<property name="name" value="Aditya Kumar Maurya" />
+ 	<property name="phones">
+ 	<list>
+ 		<value>4348374348</value>
+ 		<value>4348374348</value>
+ 		<value>4348374348</value>
+ 	</list>
+ 	</property>
+ 	<property name="address">
+ 	<set>
+ 		<value>C</value>
+ 		<value>Java</value>
+ 		<value>Spring</value>
+ 	</set>
+ 	</property>
+ 	<property name="courses">
+ 	<map>
+ 		<entry key="java" value="5"/>
+ 		<entry key="c" value="6"/>
+ 		<entry key="js" value="7"/>
+ 	</map>
+ 	</property>
+ <property name="properties">
+ <props>
+ <prop key="name">Aadi</prop>
+ <prop key="TextEditor">Eclipse</prop>
+ </props>
+ </property>
+ 
+ </bean>
+</beans>
